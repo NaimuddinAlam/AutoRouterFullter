@@ -10,12 +10,10 @@ class SecondePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: ElevatedButton(onPressed: (){
-            AutoRouter.of(context).push(ThirdRoute());
-          }, child: Text("2nd")),
-        ),
+      body: Center(
+        child: ElevatedButton(onPressed: (){
+          AutoRouter.of(context).push(const ThirdRoute());
+        }, child: const Text("2nd")),
       ),
     );
   }
